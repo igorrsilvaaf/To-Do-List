@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1Mu51xFIzIFKw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+:root {
+    --primary-color: #020202e3; /*minha cor de fundo*/
+    --secondary-color: #303031;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-color: var(--primary-color);
+    font: 1.3rem 'Roboto', sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.todo {
+    display: flex;
+    width: 45vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px auto;
+    gap: 20px;
+}
+
+.todo__title {
+    display: flex;
+    /*background-color: var(--secondary-color);*/
+    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/55/30355/1.0-rev1/images/144b9554-ae6f-45fa-bfa4-5d656490c5a8/e2e7ca273a778fbfa31cfe8584c7884f.jpg);
+    width: 100%;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 1px 1px 2px black;
+    font-size: 2.0rem;
+    color: #bdb6b6;
+}
+
+.todo__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo__item{
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-right: 2px;
+    box-shadow: 1px 1px 2px black;
+    color: #fcfcfc;
+}
+.todo__item > div {
+    width: 100%;
+}
+.todo__item:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    background-color: var(--secondary-color);
+    color: #E1E1E6;
+}
+
+
+.todo__item > input[type='text'] {
+    border: none;
+    width: 100%;
+    font: roboto;
+    padding: 2px;
+    margin: 2px;
+}
+
+/*Botao cancelar o item*/
+.todo__item > input[type='button'],
+.todo__item > input[type='checkbox'] {
+    width: 15px;
+    height: 15x;
+}
+
+/*açao para marcar como concluida a tarefa*/
+.todo__item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
+}
+
+
+.todo__new-item{
+    display: flex;
+    width: 75%;
+    height: 35px;
+    justify-content: space-around;
+    padding: 3px;
+    margin: 5px;
+}
+
+/*Campo onde adiciono as novas tarefas*/
+.todo__new-item > input{
+    background-color: #e4e4d2;
+    border: none;
+    width: 75%;
+    outline: none;
+    border-radius: 10px;
+}
+
+
+.todo__new-item > input::placeholder {
+    font-style: Roboto;
+    font-weight: normal;
+}
+
+@media(max-width: 1024px){
+    .todo__new-item{
+        width: 150%;
+    }
+
+    .todo-list{
+        width: 100%;
+    }
+
+    .todo-title{
+        width: 100%;
+    }
+
+    .todo{
+        width: 70%;
+    }
+
+}
