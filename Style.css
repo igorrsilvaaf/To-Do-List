@@ -54,7 +54,7 @@ body {
 
 .todo__list {
     display: flex;
-    width: 100%;
+    width: 73%;
     flex-direction: column;
     gap: 10px;
 }
