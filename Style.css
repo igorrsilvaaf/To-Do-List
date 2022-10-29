@@ -38,8 +38,8 @@ body {
 
 .todo__title {
     display: flex;
-    /*background-color: var(--secondary-color);*/
-    background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/55/30355/1.0-rev1/images/144b9554-ae6f-45fa-bfa4-5d656490c5a8/e2e7ca273a778fbfa31cfe8584c7884f.jpg);
+    background-image: url(https://images.unsplash.com/photo-1666756235183-4135881d60bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
     width: 75%;
     height: 45px;
     justify-content: center;
@@ -49,7 +49,7 @@ body {
     font-size: 2.0rem;
     letter-spacing: 22px;
     font-weight: bold;
-    color: #bdb6b6;
+    color: #771015;
 }
 
 .todo__list {
