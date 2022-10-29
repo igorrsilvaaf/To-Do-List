@@ -8,7 +8,7 @@
 
 :root {
     --primary-color: #020202e3; /*minha cor de fundo*/
-    --secondary-color: #303031;
+    --secondary-color: #373738;
 }
 
 *{
@@ -40,13 +40,15 @@ body {
     display: flex;
     /*background-color: var(--secondary-color);*/
     background-image: url(https://addons-media.operacdn.com/media/CACHE/images/themes/55/30355/1.0-rev1/images/144b9554-ae6f-45fa-bfa4-5d656490c5a8/e2e7ca273a778fbfa31cfe8584c7884f.jpg);
-    width: 100%;
-    height: 35px;
+    width: 75%;
+    height: 45px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
     box-shadow: 1px 1px 2px black;
     font-size: 2.0rem;
+    letter-spacing: 22px;
+    font-weight: bold;
     color: #bdb6b6;
 }
 
@@ -103,7 +105,7 @@ body {
 .todo__new-item{
     display: flex;
     width: 75%;
-    height: 35px;
+    height: 45px;
     justify-content: space-around;
     padding: 3px;
     margin: 5px;
@@ -111,11 +113,11 @@ body {
 
 /*Campo onde adiciono as novas tarefas*/
 .todo__new-item > input{
-    background-color: #e4e4d2;
+    background-color: #ffffff;
     border: none;
-    width: 75%;
+    width: 100%;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 
@@ -126,7 +128,7 @@ body {
 
 @media(max-width: 1024px){
     .todo__new-item{
-        width: 150%;
+        width: 100%;
     }
 
     .todo-list{
